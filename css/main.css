@@ -111,3 +111,31 @@
 .btn:hover {
     background-color: #764ba2;
 }
+
+/* Text Alignment Classes */
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Address Styles */
+address {
+    font-style: normal;
+}
+
+/* Social Links */
+.social-links a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #667eea;
+}
