@@ -1,0 +1,20 @@
+{
+  "name": "desarrollo_pagina_curso",
+  "version": "1.0.0",
+  "description": "Muestra de pagina web en Angular",
+  "homepage": "https://github.com/LuisVelez28/Desarrollo_Pagina_Curso#readme",
+  "bugs": {
+    "url": "https://github.com/LuisVelez28/Desarrollo_Pagina_Curso/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisVelez28/Desarrollo_Pagina_Curso.git"
+  },
+  "license": "ISC",
+  "author": "Luis Felipe Velez Garcia",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
