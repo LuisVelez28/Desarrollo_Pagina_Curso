@@ -35,6 +35,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="nosotros.html">Nosotros</a>
                     </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-warning btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#registerModal">
+                            <span class="oi oi-person"></span> Registrarse
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -301,6 +306,84 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal de Registro -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="registerModalLabel">
+                        <span class="oi oi-person"></span> Únete a Nuestra Comunidad
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted mb-4">Regístrate y disfruta de beneficios exclusivos, descuentos especiales y ofertas personalizadas.</p>
+                    <form id="registerForm">
+                        <div class="mb-3">
+                            <label for="registerName" class="form-label">Nombre Completo *</label>
+                            <input type="text" class="form-control" id="registerName" placeholder="Juan Pérez" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Correo Electrónico *</label>
+                            <input type="email" class="form-control" id="registerEmail" placeholder="juan@ejemplo.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPhone" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="registerPhone" placeholder="+1 (555) 123-4567">
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Contraseña *</label>
+                            <input type="password" class="form-control" id="registerPassword" placeholder="Mínimo 8 caracteres" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerCountry" class="form-label">País</label>
+                            <select class="form-control" id="registerCountry">
+                                <option value="">Selecciona tu país</option>
+                                <option value="AR">Argentina</option>
+                                <option value="BO">Bolivia</option>
+                                <option value="BR">Brasil</option>
+                                <option value="CL">Chile</option>
+                                <option value="CO">Colombia</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="ES">España</option>
+                                <option value="MX">México</option>
+                                <option value="PE">Perú</option>
+                                <option value="US">Estados Unidos</option>
+                                <option value="UY">Uruguay</option>
+                                <option value="VE">Venezuela</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="registerNewsletter">
+                                <label class="form-check-label" for="registerNewsletter">
+                                    Deseo recibir ofertas y promociones por email
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="registerTerms" required>
+                                <label class="form-check-label" for="registerTerms">
+                                    Acepto los <a href="#" class="text-primary">términos y condiciones</a> *
+                                </label>
+                            </div>
+                        </div>
+                        <div class="alert alert-info">
+                            <small><span class="oi oi-info"></span> Al registrarte, obtendrás un 10% de descuento en tu primera reserva.</small>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" form="registerForm" class="btn btn-primary">
+                        <span class="oi oi-check"></span> Registrarse
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>

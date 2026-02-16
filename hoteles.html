@@ -265,36 +265,90 @@
 
                     <div class="tab-pane fade p-4" id="payment" role="tabpanel" aria-labelledby="payment-tab">
                         <h5 class="mb-3">Opciones de Pago Disponibles</h5>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h6 class="card-title"><span class="oi oi-credit"></span> Tarjeta de Crédito/Débito</h6>
-                                        <p class="card-text">Aceptamos Visa, MasterCard, American Express.</p>
+                        <p class="text-muted mb-4">Selecciona una opción para ver más detalles sobre cada método de pago.</p>
+                        
+                        <div class="accordion" id="paymentAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#paymentCard" aria-expanded="true" aria-controls="paymentCard">
+                                        <span class="oi oi-credit-card me-2"></span> Tarjeta de Crédito/Débito
+                                    </button>
+                                </h2>
+                                <div id="paymentCard" class="accordion-collapse collapse show" data-bs-parent="#paymentAccordion">
+                                    <div class="accordion-body">
+                                        <p><strong>Tarjetas aceptadas:</strong> Visa, MasterCard, American Express</p>
+                                        <p>Pago seguro con tecnología de encriptación SSL. Procesamiento instantáneo.</p>
+                                        <ul>
+                                            <li>Sin cargos adicionales por uso de tarjeta</li>
+                                            <li>Cargo en una sola exhibición</li>
+                                            <li>Opción de pago diferido disponible con algunas tarjetas</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h6 class="card-title"><span class="oi oi-home"></span> Transferencia Bancaria</h6>
-                                        <p class="card-text">Transferencia directa a nuestra cuenta bancaria.</p>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#paymentTransfer" aria-expanded="false" aria-controls="paymentTransfer">
+                                        <span class="oi oi-home me-2"></span> Transferencia Bancaria
+                                    </button>
+                                </h2>
+                                <div id="paymentTransfer" class="accordion-collapse collapse" data-bs-parent="#paymentAccordion">
+                                    <div class="accordion-body">
+                                        <p><strong>Transferencia directa a nuestra cuenta bancaria</strong></p>
+                                        <p>Ideal para pagos de reservas anticipadas.</p>
+                                        <ul>
+                                            <li>Banco: Banco Internacional</li>
+                                            <li>Cuenta: 1234-5678-9012-3456</li>
+                                            <li>Código SWIFT: BIINTXXX</li>
+                                            <li>Tiempo de confirmación: 24-48 horas hábiles</li>
+                                        </ul>
+                                        <div class="alert alert-warning">
+                                            <small><span class="oi oi-warning"></span> <strong>Importante:</strong> Incluye tu número de reserva como referencia en la transferencia.</small>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h6 class="card-title"><span class="oi oi-moon"></span> PayPal</h6>
-                                        <p class="card-text">Pago seguro a través de PayPal.</p>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#paymentPaypal" aria-expanded="false" aria-controls="paymentPaypal">
+                                        <span class="oi oi-moon me-2"></span> PayPal
+                                    </button>
+                                </h2>
+                                <div id="paymentPaypal" class="accordion-collapse collapse" data-bs-parent="#paymentAccordion">
+                                    <div class="accordion-body">
+                                        <p><strong>Pago seguro a través de PayPal</strong></p>
+                                        <p>Rápido, seguro y protegido por la garantía de comprador de PayPal.</p>
+                                        <ul>
+                                            <li>No es necesario compartir información bancaria</li>
+                                            <li>Procesamiento instantáneo</li>
+                                            <li>Protección del comprador incluida</li>
+                                            <li>Acepta saldos de PayPal, tarjetas y cuentas bancarias vinculadas</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h6 class="card-title"><span class="oi oi-mobile"></span> Billetera Digital</h6>
-                                        <p class="card-text">Google Pay, Apple Pay y otras opciones.</p>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#paymentWallet" aria-expanded="false" aria-controls="paymentWallet">
+                                        <span class="oi oi-phone me-2"></span> Billetera Digital
+                                    </button>
+                                </h2>
+                                <div id="paymentWallet" class="accordion-collapse collapse" data-bs-parent="#paymentAccordion">
+                                    <div class="accordion-body">
+                                        <p><strong>Google Pay, Apple Pay y otras opciones digitales</strong></p>
+                                        <p>Pago móvil rápido y seguro desde tu dispositivo.</p>
+                                        <ul>
+                                            <li><span class="oi oi-thumb-up text-success"></span> Google Pay</li>
+                                            <li><span class="oi oi-thumb-up text-success"></span> Apple Pay</li>
+                                            <li><span class="oi oi-thumb-up text-success"></span> Samsung Pay</li>
+                                            <li><span class="oi oi-thumb-up text-success"></span> Mercado Pago</li>
+                                        </ul>
+                                        <div class="alert alert-info">
+                                            <small><span class="oi oi-info"></span> Disponible en dispositivos compatibles con autenticación biométrica.</small>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
