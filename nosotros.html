@@ -200,7 +200,7 @@
                             <div class="col-md-4">
                                 <div class="card bg-light">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title">María García</h5>
+                                        <h5 class="card-title" data-bs-toggle="popover" title="María García" data-bs-content="Directora General con 20 años de experiencia en gestión hotelera internacional">María García</h5>
                                         <p class="card-subtitle text-muted mb-3">Directora General</p>
                                         <div class="contact-item mb-2">
                                             <span class="oi oi-envelope-closed me-2"></span>
@@ -243,7 +243,7 @@
                             <div class="col-md-4">
                                 <div class="card bg-light">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title">Carlos López</h5>
+                                        <h5 class="card-title" data-bs-toggle="popover" title="Carlos López" data-bs-content="Gerente de Operaciones con expertise en optimización de procesos y calidad de servicio">Carlos López</h5>
                                         <p class="card-subtitle text-muted mb-3">Director de Tecnología</p>
                                         <div class="contact-item mb-2">
                                             <span class="oi oi-envelope-closed me-2"></span>
@@ -286,7 +286,7 @@
                             <div class="col-md-4">
                                 <div class="card bg-light">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title">Ana Rodríguez</h5>
+                                        <h5 class="card-title" data-bs-toggle="popover" title="Ana Rodríguez" data-bs-content="Directora de Recursos Humanos especializada en retención de talento y desarrollo profesional">Ana Rodríguez</h5>
                                         <p class="card-subtitle text-muted mb-3">Directora de Operaciones</p>
                                         <div class="contact-item mb-2">
                                             <span class="oi oi-envelope-closed me-2"></span>
@@ -353,8 +353,14 @@
     </footer>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $('[data-bs-toggle="tooltip"]').tooltip();
+            $('[data-bs-toggle="popover"]').popover();
+        });
+    </script>
 </body>
 
 </html>

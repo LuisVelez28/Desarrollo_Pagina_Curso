@@ -64,7 +64,7 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="display-4 fw-bold">Descubre el Lujo y la Comodidad</h1>
                     <p class="lead">Hoteles de 5 estrellas con servicios premium y atención personalizada</p>
-                    <a href="hoteles.html" class="btn btn-primary btn-lg"><span class="oi oi-magnifying-glass"></span> Explorar Hoteles</a>
+                    <a href="hoteles.html" class="btn btn-primary btn-lg" data-bs-toggle="popover" title="Explorar Hoteles" data-bs-content="Consulta nuestro catálogo completo de hoteles de 5 estrellas"><span class="oi oi-magnifying-glass"></span> Explorar Hoteles</a>
                 </div>
             </div>
             <div class="carousel-item">
@@ -72,7 +72,7 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="display-4 fw-bold">Ofertas Especiales de Temporada</h1>
                     <p class="lead">Hasta 30% de descuento en reservas anticipadas</p>
-                    <a href="precios.html" class="btn btn-warning btn-lg"><span class="oi oi-tag"></span> Ver Promociones</a>
+                    <a href="precios.html" class="btn btn-warning btn-lg" data-bs-toggle="popover" title="Ver Promociones" data-bs-content="Descubre nuestros precios especiales y promociones por temporada"><span class="oi oi-tag"></span> Ver Promociones</a>
                 </div>
             </div>
             <div class="carousel-item">
@@ -80,7 +80,7 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="display-4 fw-bold">Experiencias Únicas te Esperan</h1>
                     <p class="lead">Desde hoteles boutique hasta resorts todo incluido</p>
-                    <a href="contacto.html" class="btn btn-success btn-lg"><span class="oi oi-envelope-closed"></span> Contáctanos</a>
+                    <a href="contacto.html" class="btn btn-success btn-lg" data-bs-toggle="popover" title="Contáctanos" data-bs-content="Envíanos tus consultas y preguntas sobre nuestros servicios"><span class="oi oi-envelope-closed"></span> Contáctanos</a>
                 </div>
             </div>
         </div>
@@ -179,14 +179,21 @@
                 <div class="card h-100">
                     <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=400&h=250&fit=crop" class="card-img-top" alt="Hotel Premium Deluxe">
                     <div class="card-header bg-primary text-white">
-                        <span class="oi oi-star"></span> Premium
+                        <span class="oi oi-star" data-bs-toggle="tooltip" data-bs-placement="top" title="Hotel de 5 estrellas con servicio de lujo"></span> Premium
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Hotel Premium Deluxe</h5>
+                        <h5 class="card-title" data-bs-toggle="popover" title="Hotel Premium Deluxe" data-bs-content="Experiencia de lujo premium con servicios de clase mundial y atención personalizada a los huespedes">Hotel Premium Deluxe</h5>
                         <p class="card-text">Experimenta el lujo y la comodidad en nuestro hotel de cinco estrellas con servicios de clase mundial.</p>
                     </div>
                     <div class="card-footer bg-light">
-                        <a href="#" class="btn btn-primary w-100"><span class="oi oi-plus"></span> Reservar Ahora</a>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <a href="#" class="btn btn-primary w-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Reserva instantánea con confirmación"><span class="oi oi-plus"></span> Reservar</a>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modalPremium" data-bs-original-title="Consulta disponibilidad y servicios" title="Consulta disponibilidad y servicios"><span class="oi oi-envelope-closed"></span> Contactar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -194,14 +201,21 @@
                 <div class="card h-100">
                     <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=400&h=250&fit=crop" class="card-img-top" alt="Hotel Boutique Elegancia">
                     <div class="card-header bg-info text-white">
-                        <span class="oi oi-heart"></span> Boutique
+                        <span class="oi oi-heart" data-bs-toggle="tooltip" data-bs-placement="top" title="Hotel boutique con servicio personalizado"></span> Boutique
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Hotel Boutique Elegancia</h5>
+                        <h5 class="card-title" data-bs-toggle="popover" title="Hotel Boutique Elegancia" data-bs-content="Hotel boutique elegante con diseño sofisticado y experiencias personalizadas">Hotel Boutique Elegancia</h5>
                         <p class="card-text">Descubre la elegancia y personalización en nuestro acogedor hotel boutique ubicado en el corazón de la ciudad.</p>
                     </div>
                     <div class="card-footer bg-light">
-                        <a href="#" class="btn btn-primary w-100"><span class="oi oi-plus"></span> Reservar Ahora</a>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <a href="#" class="btn btn-primary w-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Reserva instantánea con confirmación"><span class="oi oi-plus"></span> Reservar</a>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modalBoutique" data-bs-original-title="Consulta disponibilidad y servicios" title="Consulta disponibilidad y servicios"><span class="oi oi-envelope-closed"></span> Contactar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -209,14 +223,21 @@
                 <div class="card h-100">
                     <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=400&h=250&fit=crop" class="card-img-top" alt="Hotel Económico Confort">
                     <div class="card-header bg-success text-white">
-                        <span class="oi oi-dollar"></span> Económico
+                        <span class="oi oi-dollar" data-bs-toggle="tooltip" data-bs-placement="top" title="Mejor relación calidad-precio"></span> Económico
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Hotel Económico Confort</h5>
+                        <h5 class="card-title" data-bs-toggle="popover" title="Hotel Económico Confort" data-bs-content="Alojamiento accesible con buena relación precio-calidad y comodidades esenciales">Hotel Económico Confort</h5>
                         <p class="card-text">Disfruta de excelente relación entre calidad y precio con todas las comodidades necesarias para tu descanso.</p>
                     </div>
                     <div class="card-footer bg-light">
-                        <a href="#" class="btn btn-primary w-100"><span class="oi oi-plus"></span> Reservar Ahora</a>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <a href="#" class="btn btn-primary w-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Reserva instantánea con confirmación"><span class="oi oi-plus"></span> Reservar</a>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modalEconomico" data-bs-original-title="Consulta disponibilidad y servicios" title="Consulta disponibilidad y servicios"><span class="oi oi-envelope-closed"></span> Contactar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -224,14 +245,21 @@
                 <div class="card h-100">
                     <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400&h=250&fit=crop" class="card-img-top" alt="Hotel Resort Playas">
                     <div class="card-header bg-warning text-dark">
-                        <span class="oi oi-sun"></span> Resort
+                        <span class="oi oi-sun" data-bs-toggle="tooltip" data-bs-placement="top" title="Resort todo incluido frente a la playa"></span> Resort
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Hotel Resort Playas</h5>
+                        <h5 class="card-title" data-bs-toggle="popover" title="Hotel Resort Playas" data-bs-content="Resort todo incluido en playa con actividades acuaticas, playas privadas y entretenimiento">Hotel Resort Playas</h5>
                         <p class="card-text">Relájate en nuestro resort frente a la playa con piscina, spa y entretenimiento para toda la familia.</p>
                     </div>
                     <div class="card-footer bg-light">
-                        <a href="#" class="btn btn-primary w-100"><span class="oi oi-plus"></span> Reservar Ahora</a>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <a href="#" class="btn btn-primary w-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Reserva instantánea con confirmación"><span class="oi oi-plus"></span> Reservar</a>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modalResort" data-bs-original-title="Consulta disponibilidad y servicios" title="Consulta disponibilidad y servicios"><span class="oi oi-envelope-closed"></span> Contactar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -239,14 +267,21 @@
                 <div class="card h-100">
                     <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop" class="card-img-top" alt="Hotel Montaña Aventura">
                     <div class="card-header bg-secondary text-white">
-                        <span class="oi oi-globe"></span> Aventura
+                        <span class="oi oi-globe" data-bs-toggle="tooltip" data-bs-placement="top" title="Hotel de montaña para ecoturismo y aventura"></span> Aventura
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Hotel Montaña Aventura</h5>
+                        <h5 class="card-title" data-bs-toggle="popover" title="Hotel Montaña Aventura" data-bs-content="Hotel aventurero en la montaña con senderismo, actividades al aire libre y naturaleza">Hotel Montaña Aventura</h5>
                         <p class="card-text">Vive la emoción de la naturaleza con nuestro hotel de montaña ideal para aventureros y amantes del ecoturismo.</p>
                     </div>
                     <div class="card-footer bg-light">
-                        <a href="#" class="btn btn-primary w-100"><span class="oi oi-plus"></span> Reservar Ahora</a>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <a href="#" class="btn btn-primary w-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Reserva instantánea con confirmación"><span class="oi oi-plus"></span> Reservar</a>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modalMontana" data-bs-original-title="Consulta disponibilidad y servicios" title="Consulta disponibilidad y servicios"><span class="oi oi-envelope-closed"></span> Contactar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -254,14 +289,21 @@
                 <div class="card h-100">
                     <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400&h=250&fit=crop" class="card-img-top" alt="Hotel Centro Negocios">
                     <div class="card-header bg-dark text-white">
-                        <span class="oi oi-briefcase"></span> Negocios
+                        <span class="oi oi-briefcase" data-bs-toggle="tooltip" data-bs-placement="top" title="Hotel para viajeros de negocios con salas de reunión"></span> Negocios
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Hotel Centro Negocios</h5>
+                        <h5 class="card-title" data-bs-toggle="popover" title="Hotel Centro Negocios" data-bs-content="Hotel enfocado en negocios con salas de conferencia, wifi de alta velocidad y ubicación céntrica">Hotel Centro Negocios</h5>
                         <p class="card-text">Perfecto para viajeros de negocios con salas de reuniones, wifi de alta velocidad y ubicación estratégica.</p>
                     </div>
                     <div class="card-footer bg-light">
-                        <a href="#" class="btn btn-primary w-100"><span class="oi oi-plus"></span> Reservar Ahora</a>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <a href="#" class="btn btn-primary w-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Reserva instantánea con confirmación"><span class="oi oi-plus"></span> Reservar</a>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modalNegocios" data-bs-original-title="Consulta disponibilidad y servicios" title="Consulta disponibilidad y servicios"><span class="oi oi-envelope-closed"></span> Contactar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -314,9 +356,232 @@
         </div>
     </footer>
 
+    <!-- Modals para Contactar Hoteles -->
+    <!-- Modal Hotel Premium Deluxe -->
+    <div class="modal fade" id="modalPremium" tabindex="-1" aria-labelledby="modalPremiumLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="modalPremiumLabel"><span class="oi oi-envelope-closed"></span> Contactar Hotel Premium Deluxe</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombrePremiumIndex" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombrePremiumIndex" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailPremiumIndex" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailPremiumIndex" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefonoPremiumIndex" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefonoPremiumIndex">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensajePremiumIndex" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensajePremiumIndex" rows="4" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Mensaje Enviado" data-bs-content="Tu consulta ha sido enviada exitosamente. Te contactaremos pronto.">Enviar Mensaje</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Hotel Boutique Elegancia -->
+    <div class="modal fade" id="modalBoutique" tabindex="-1" aria-labelledby="modalBoutiqueLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title" id="modalBoutiqueLabel"><span class="oi oi-envelope-closed"></span> Contactar Hotel Boutique Elegancia</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombreBoutiqueIndex" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombreBoutiqueIndex" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailBoutiqueIndex" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailBoutiqueIndex" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefonoBoutiqueIndex" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefonoBoutiqueIndex">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensajeBoutiqueIndex" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensajeBoutiqueIndex" rows="4" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-info" data-bs-toggle="popover" title="Mensaje Enviado" data-bs-content="Tu consulta ha sido enviada exitosamente. Te contactaremos pronto.">Enviar Mensaje</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Hotel Económico Confort -->
+    <div class="modal fade" id="modalEconomico" tabindex="-1" aria-labelledby="modalEconomicoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="modalEconomicoLabel"><span class="oi oi-envelope-closed"></span> Contactar Hotel Económico Confort</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombreEconomicoIndex" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombreEconomicoIndex" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailEconomicoIndex" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailEconomicoIndex" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefonoEconomicoIndex" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefonoEconomicoIndex">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensajeEconomicoIndex" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensajeEconomicoIndex" rows="4" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success" data-bs-toggle="popover" title="Mensaje Enviado" data-bs-content="Tu consulta ha sido enviada exitosamente. Te contactaremos pronto.">Enviar Mensaje</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Hotel Resort Playas -->
+    <div class="modal fade" id="modalResort" tabindex="-1" aria-labelledby="modalResortLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title" id="modalResortLabel"><span class="oi oi-envelope-closed"></span> Contactar Hotel Resort Playas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombreResortIndex" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombreResortIndex" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailResortIndex" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailResortIndex" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefonoResortIndex" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefonoResortIndex">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensajeResortIndex" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensajeResortIndex" rows="4" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-warning" data-bs-toggle="popover" title="Mensaje Enviado" data-bs-content="Tu consulta ha sido enviada exitosamente. Te contactaremos pronto.">Enviar Mensaje</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Hotel Montaña Aventura -->
+    <div class="modal fade" id="modalMontana" tabindex="-1" aria-labelledby="modalMontanaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-secondary text-white">
+                    <h5 class="modal-title" id="modalMontanaLabel"><span class="oi oi-envelope-closed"></span> Contactar Hotel Montaña Aventura</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombreMontanaIndex" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombreMontanaIndex" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailMontanaIndex" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailMontanaIndex" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefonoMontanaIndex" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefonoMontanaIndex">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensajeMontanaIndex" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensajeMontanaIndex" rows="4" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="popover" title="Mensaje Enviado" data-bs-content="Tu consulta ha sido enviada exitosamente. Te contactaremos pronto.">Enviar Mensaje</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Hotel Centro Negocios -->
+    <div class="modal fade" id="modalNegocios" tabindex="-1" aria-labelledby="modalNegociosLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="modalNegociosLabel"><span class="oi oi-envelope-closed"></span> Contactar Hotel Centro Negocios</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombreNegociosIndex" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombreNegociosIndex" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailNegociosIndex" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailNegociosIndex" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefonoNegociosIndex" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefonoNegociosIndex">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensajeNegociosIndex" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensajeNegociosIndex" rows="4" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-dark" data-bs-toggle="popover" title="Mensaje Enviado" data-bs-content="Tu consulta ha sido enviada exitosamente. Te contactaremos pronto.">Enviar Mensaje</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $("[data-bs-toggle='tooltip']").tooltip();
+            $("[data-bs-toggle='popover']").popover();
+        });
+    </script>
 </body>
 
 </html>
