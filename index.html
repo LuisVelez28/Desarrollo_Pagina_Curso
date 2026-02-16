@@ -94,19 +94,80 @@
         </button>
     </div>
 
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5">
         <div class="row">
-            <div class="col-12 col-sm-6 col-lg-4">
-                <h5>¿Cómo funciona?</h5>
-                <p>Busca y reserva el hotel que mejor se adapte a tus necesidades de manera rápida y segura.</p>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4">
-                <h5>¿Dónde puedo encontrar hoteles?</h5>
-                <p>Encuentra hoteles en diversas ubicaciones, desde ciudades cosmopolitas hasta destinos turísticos populares.</p>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-4">
-                <h5>¿Qué servicios ofrecen?</h5>
-                <p>Ofrecemos una variedad de servicios para satisfacer tus necesidades, incluyendo Wi-Fi, desayuno incluido y atención personalizada.</p>
+            <div class="col-12">
+                <h2 class="mb-4">Preguntas Frecuentes</h2>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#howWorks" aria-expanded="true" aria-controls="howWorks">
+                                <span class="oi oi-question-mark me-2"></span> ¿Cómo funciona?
+                            </button>
+                        </h2>
+                        <div id="howWorks" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>Busca y reserva el hotel que mejor se adapte a tus necesidades de manera rápida y segura. El proceso es simple:</p>
+                                <ol>
+                                    <li>Selecciona tu destino y fechas de viaje</li>
+                                    <li>Explora nuestro catálogo de hoteles disponibles</li>
+                                    <li>Compara precios, servicios y ubicaciones</li>
+                                    <li>Realiza tu reserva de forma segura</li>
+                                    <li>Recibe confirmación instantánea en tu email</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#findHotels" aria-expanded="false" aria-controls="findHotels">
+                                <span class="oi oi-map me-2"></span> ¿Dónde puedo encontrar hoteles?
+                            </button>
+                        </h2>
+                        <div id="findHotels" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>Encuentra hoteles en diversas ubicaciones, desde ciudades cosmopolitas hasta destinos turísticos populares. Contamos con opciones en:</p>
+                                <ul>
+                                    <li><strong>Ciudades Principales:</strong> Nueva York, París, Londres, Tokio, Barcelona</li>
+                                    <li><strong>Playas y Resorts:</strong> Caribe, Maldivas, Costa Rica, Tailandia</li>
+                                    <li><strong>Montaña:</strong> Alpes, Patagonia, Himalaya</li>
+                                    <li><strong>Zonas Turísticas:</strong> Machu Picchu, Egipto, Grecia</li>
+                                </ul>
+                                <p>Utiliza nuestro buscador avanzado para filtrar por región, tipo de hotel y presupuesto.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#services" aria-expanded="false" aria-controls="services">
+                                <span class="oi oi-star me-2"></span> ¿Qué servicios ofrecen?
+                            </button>
+                        </h2>
+                        <div id="services" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>Ofrecemos una variedad de servicios para satisfacer tus necesidades, incluyendo:</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li><span class="oi oi-wifi me-2 text-primary"></span>Wi-Fi de alta velocidad gratuito</li>
+                                            <li><span class="oi oi-fork me-2 text-primary"></span>Desayuno continental incluido</li>
+                                            <li><span class="oi oi-car me-2 text-primary"></span>Estacionamiento gratuito</li>
+                                            <li><span class="oi oi-phone me-2 text-primary"></span>Servicio a la habitación 24/7</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li><span class="oi oi-heart me-2 text-primary"></span>Gimnasio y spa</li>
+                                            <li><span class="oi oi-droplet me-2 text-primary"></span>Piscina olímpica</li>
+                                            <li><span class="oi oi-person me-2 text-primary"></span>Servicio de conserjería</li>
+                                            <li><span class="oi oi-globe me-2 text-primary"></span>Tours y excursiones</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

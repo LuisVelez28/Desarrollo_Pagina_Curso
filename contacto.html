@@ -171,20 +171,107 @@
         <div class="row">
             <div class="col-12">
                 <h3 class="mb-4">Preguntas Frecuentes</h3>
-            </div>
-            <div class="col-md-6">
-                <h5>¿Cómo puedo hacer una reservación?</h5>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 
-                <h5 class="mt-4">¿Cuál es la política de cancelación?</h5>
-                <p class="text-muted">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <div class="col-md-6">
-                <h5>¿Ofrecen descuentos grupales?</h5>
-                <p class="text-muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                
-                <h5 class="mt-4">¿Tienen programa de fidelidad?</h5>
-                <p class="text-muted">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <!-- Accordion de Preguntas Frecuentes -->
+                <div class="accordion" id="faqContactAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                <span class="oi oi-question-mark me-2"></span> ¿Cómo puedo hacer una reservación?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqContactAccordion">
+                            <div class="accordion-body">
+                                <p>Hacer una reservación es muy fácil:</p>
+                                <ol class="ms-3">
+                                    <li>Visita nuestra página de <a href="hoteles.html">Hoteles</a> o <a href="precios.html">Precios</a></li>
+                                    <li>Selecciona el hotel de tu preferencia</li>
+                                    <li>Elige las fechas y número de huéspedes</li>
+                                    <li>Completa tus datos personales</li>
+                                    <li>Realiza el pago (50% de seña)</li>
+                                    <li>Recibirás confirmación por email</li>
+                                </ol>
+                                <div class="alert alert-info mt-3 mb-0">
+                                    <strong>Consejo:</strong> Reserva con anticipación para obtener mejores precios.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                <span class="oi oi-x me-2"></span> ¿Cuál es la política de cancelación?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqContactAccordion">
+                            <div class="accordion-body">
+                                <p>Nuestra política de cancelación es flexible:</p>
+                                <div class="table-responsive">
+                                    <table class="table table-sm">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Cancelación</th>
+                                                <th>Reembolso</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>15+ días antes</strong></td>
+                                                <td><span class="badge bg-success">100% reembolso</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>7-14 días antes</strong></td>
+                                                <td><span class="badge bg-warning">75% reembolso</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Menos de 7 días</strong></td>
+                                                <td><span class="badge bg-danger">Sin reembolso</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                <span class="oi oi-people me-2"></span> ¿Ofrecen descuentos grupales?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqContactAccordion">
+                            <div class="accordion-body">
+                                <p>¡Sí! Tenemos excelentes descuentos para grupos:</p>
+                                <ul class="ms-3">
+                                    <li><strong>5-9 personas:</strong> 15% de descuento</li>
+                                    <li><strong>10-19 personas:</strong> 20% de descuento</li>
+                                    <li><strong>20+ personas:</strong> 25% de descuento + coordinador gratis</li>
+                                </ul>
+                                <div class="alert alert-info mt-3 mb-0">
+                                    <strong>Para grupos grandes:</strong> <a href="#contactForm" class="alert-link">Contáctanos directamente</a> para una cotización personalizada.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                <span class="oi oi-star me-2"></span> ¿Tienen programa de fidelidad?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqContactAccordion">
+                            <div class="accordion-body">
+                                <p>Nuestro programa de fidelidad te permite acumular puntos:</p>
+                                <ul class="ms-3">
+                                    <li><strong>1 punto por cada $1 gastado</strong> en reservaciones</li>
+                                    <li><strong>Bonus de bienvenida:</strong> 500 puntos al registrarte</li>
+                                    <li><strong>Canjeables:</strong> Por descuentos, upgrades gratuitos, etc.</li>
+                                </ul>
+                                <p class="mt-3 mb-0">Todos nuestros clientes son miembros automáticamente. <a href="#contactForm">Regístrate ahora</a> para empezar a ganar puntos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

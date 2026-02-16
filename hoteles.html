@@ -169,21 +169,189 @@
 
     <div class="container mt-5 mb-5">
         <div class="row">
-            <div class="col-md-6">
-                <h3 class="mb-3">Servicios Incluidos</h3>
-                <ul class="list-group">
-                    <li class="list-group-item"><span class="oi oi-check text-success"></span> Wi-Fi de alta velocidad gratuito</li>
-                    <li class="list-group-item"><span class="oi oi-check text-success"></span> Desayuno continental incluido</li>
-                    <li class="list-group-item"><span class="oi oi-check text-success"></span> Estacionamiento gratuito</li>
-                    <li class="list-group-item"><span class="oi oi-check text-success"></span> Servicio a la habitación 24/7</li>
-                    <li class="list-group-item"><span class="oi oi-check text-success"></span> Gimnasio y spa</li>
+            <div class="col-12">
+                <h3 class="mb-4">Información de Reserva</h3>
+                
+                <!-- Pills Component -->
+                <ul class="nav nav-pills mb-3" id="hotelTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="services-tab" data-bs-toggle="pill" data-bs-target="#services" type="button" role="tab" aria-controls="services" aria-selected="true">
+                            <span class="oi oi-check"></span> Servicios Incluidos
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="why-tab" data-bs-toggle="pill" data-bs-target="#why" type="button" role="tab" aria-controls="why" aria-selected="false">
+                            <span class="oi oi-star"></span> Por qué Elegirnos
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="payment-tab" data-bs-toggle="pill" data-bs-target="#payment" type="button" role="tab" aria-controls="payment" aria-selected="false">
+                            <span class="oi oi-dollar"></span> Opciones de Pago
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="cancellation-tab" data-bs-toggle="pill" data-bs-target="#cancellation" type="button" role="tab" aria-controls="cancellation" aria-selected="false">
+                            <span class="oi oi-info"></span> Política de Cancelación
+                        </button>
+                    </li>
                 </ul>
-            </div>
-            <div class="col-md-6">
-                <h3 class="mb-3">Por qué Elegirnos</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Ut faucibus pulvinar elementum integer enim neque volutpat.</p>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+
+                <!-- Tab Content -->
+                <div class="tab-content" id="hotelTabsContent">
+                    <div class="tab-pane fade show active p-4" id="services" role="tabpanel" aria-labelledby="services-tab">
+                        <h5 class="mb-3">Servicios Incluidos en Todos Nuestros Hoteles</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item"><span class="oi oi-check text-success"></span> Wi-Fi de alta velocidad gratuito</li>
+                            <li class="list-group-item"><span class="oi oi-check text-success"></span> Desayuno continental incluido</li>
+                            <li class="list-group-item"><span class="oi oi-check text-success"></span> Estacionamiento gratuito</li>
+                            <li class="list-group-item"><span class="oi oi-check text-success"></span> Servicio a la habitación 24/7</li>
+                            <li class="list-group-item"><span class="oi oi-check text-success"></span> Gimnasio y spa</li>
+                            <li class="list-group-item"><span class="oi oi-check text-success"></span> Acceso a piscina olímpica</li>
+                            <li class="list-group-item"><span class="oi oi-check text-success"></span> Servicio de conserjería</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-pane fade p-4" id="why" role="tabpanel" aria-labelledby="why-tab">
+                        <h5 class="mb-3">¿Por qué Elegirnos?</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Ut faucibus pulvinar elementum integer enim neque volutpat.</p>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, consectetur adipiscing elit.</p>
+                        <div class="alert alert-info mt-3">
+                            <strong>Garantía de satisfacción:</strong> Si no estás completamente satisfecho, te devolveremos el dinero en un 100%.
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade p-4" id="payment" role="tabpanel" aria-labelledby="payment-tab">
+                        <h5 class="mb-3">Opciones de Pago Disponibles</h5>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6 class="card-title"><span class="oi oi-credit"></span> Tarjeta de Crédito/Débito</h6>
+                                        <p class="card-text">Aceptamos Visa, MasterCard, American Express.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6 class="card-title"><span class="oi oi-home"></span> Transferencia Bancaria</h6>
+                                        <p class="card-text">Transferencia directa a nuestra cuenta bancaria.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6 class="card-title"><span class="oi oi-moon"></span> PayPal</h6>
+                                        <p class="card-text">Pago seguro a través de PayPal.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6 class="card-title"><span class="oi oi-mobile"></span> Billetera Digital</h6>
+                                        <p class="card-text">Google Pay, Apple Pay y otras opciones.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade p-4" id="cancellation" role="tabpanel" aria-labelledby="cancellation-tab">
+                        <h5 class="mb-3">Política de Cancelación</h5>
+                        <p class="text-muted mb-4">Haz clic en cada opción para ver detalles específicos sobre el proceso de cancelación.</p>
+                        
+                        <div class="mb-3">
+                            <div class="card border-success">
+                                <div class="card-header bg-success text-white">
+                                    <h6 class="mb-0">
+                                        <span class="badge bg-light text-success me-2">100%</span>
+                                        15+ días antes de la reserva
+                                        <button class="btn btn-sm btn-light float-end" data-bs-toggle="collapse" data-bs-target="#cancel15">
+                                            <span class="oi oi-chevron-bottom"></span> Detalles
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="cancel15" class="collapse">
+                                    <div class="card-body">
+                                        <p><strong>Reembolso:</strong> 100% del monto pagado</p>
+                                        <p><strong>Tiempo de procesamiento:</strong> 5-7 días hábiles</p>
+                                        <p><strong>Método:</strong> Devolución a la misma forma de pago utilizada</p>
+                                        <p class="mb-0"><strong>Nota:</strong> Sin ningún cargo adicional ni penalización</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="card border-warning">
+                                <div class="card-header bg-warning">
+                                    <h6 class="mb-0">
+                                        <span class="badge bg-light text-warning me-2">75%</span>
+                                        7-14 días antes de la reserva
+                                        <button class="btn btn-sm btn-light float-end" data-bs-toggle="collapse" data-bs-target="#cancel7">
+                                            <span class="oi oi-chevron-bottom"></span> Detalles
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="cancel7" class="collapse">
+                                    <div class="card-body">
+                                        <p><strong>Reembolso:</strong> 75% del monto pagado</p>
+                                        <p><strong>Cargo por cancelación:</strong> 25% del total</p>
+                                        <p><strong>Tiempo de procesamiento:</strong> 7-10 días hábiles</p>
+                                        <p class="mb-0"><strong>Nota:</strong> El cargo cubre costos administrativos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="card border-info">
+                                <div class="card-header bg-info text-white">
+                                    <h6 class="mb-0">
+                                        <span class="badge bg-light text-info me-2">50%</span>
+                                        3-6 días antes de la reserva
+                                        <button class="btn btn-sm btn-light float-end" data-bs-toggle="collapse" data-bs-target="#cancel3">
+                                            <span class="oi oi-chevron-bottom"></span> Detalles
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="cancel3" class="collapse">
+                                    <div class="card-body">
+                                        <p><strong>Reembolso:</strong> 50% del monto pagado</p>
+                                        <p><strong>Cargo por cancelación:</strong> 50% del total</p>
+                                        <p><strong>Tiempo de procesamiento:</strong> 10-14 días hábiles</p>
+                                        <p class="mb-0"><strong>Nota:</strong> Cancelación tardía, aplican cargos elevados</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="card border-danger">
+                                <div class="card-header bg-danger text-white">
+                                    <h6 class="mb-0">
+                                        <span class="badge bg-light text-danger me-2">0%</span>
+                                        Menos de 3 días antes de la reserva
+                                        <button class="btn btn-sm btn-light float-end" data-bs-toggle="collapse" data-bs-target="#cancelLast">
+                                            <span class="oi oi-chevron-bottom"></span> Detalles
+                                        </button>
+                                    </h6>
+                                </div>
+                                <div id="cancelLast" class="collapse">
+                                    <div class="card-body">
+                                        <p><strong>Reembolso:</strong> No hay reembolso</p>
+                                        <p><strong>Cargo por cancelación:</strong> 100% del total</p>
+                                        <p><strong>Razón:</strong> Muy poco tiempo para reasignar la habitación</p>
+                                        <p class="mb-0"><strong>Excepción:</strong> Casos de fuerza mayor (con documentación) pueden ser evaluados</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
