@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^sass \"c:\\\\Users\\\\pipel\\\\OneDrive\\\\Desktop\\\\Desarrollo_Pagina_Curso\\\\css\\\\styles\\.scss\" \"c:\\\\Users\\\\pipel\\\\OneDrive\\\\Desktop\\\\Desarrollo_Pagina_Curso\\\\css\\\\styles\\.css\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
