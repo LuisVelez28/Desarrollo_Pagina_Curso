@@ -1,4 +1,4 @@
-/* ===== NAVBAR ===== */
+/* Navbar Styles */
 .navbar {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 1rem 0;
@@ -8,20 +8,19 @@
   font-weight: 700;
   letter-spacing: 0.5px;
 }
-
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.8) !important;
   font-weight: 500;
   transition: all 0.3s ease;
   margin: 0 5px;
 }
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active {
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
   color: #fff !important;
   border-bottom: 2px solid #667eea;
   padding-bottom: 2px;
 }
-
-/* ===== JUMBOTRON ===== */
+/* Jumbotron Styles */
 .jumbotron {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: #fff;
@@ -29,7 +28,7 @@
   text-align: center;
   border-radius: 8px;
   margin-bottom: 30px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
 }
 .jumbotron h1 {
   font-size: 2.5rem;
@@ -40,8 +39,7 @@
   font-size: 1.1rem;
   margin-bottom: 0;
 }
-
-/* ===== CAROUSEL ===== */
+/* Carousel/Hero Banner Styles */
 #heroCarousel {
   margin-top: 0;
   border-radius: 0;
@@ -76,8 +74,6 @@
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-
-/* ===== CARDS HOTEL ===== */
 .card-hotel {
   display: flex;
 }
@@ -136,8 +132,7 @@
   padding: 15px 20px;
   border-top: 1px solid #e9ecef;
 }
-
-/* ===== FOOTER ===== */
+/* Footer Styles */
 footer {
   background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
   color: #fff;
@@ -210,8 +205,7 @@ footer .text-center p {
   font-size: 0.85rem;
   letter-spacing: 0.5px;
 }
-
-/* ===== BUTTONS ===== */
+/* Button Styles */
 .btn {
   display: inline-block;
   padding: 12px 30px;
@@ -227,20 +221,16 @@ footer .text-center p {
 .btn:hover {
   background-color: #764ba2;
 }
-
-/* ===== TEXT ALIGNMENT ===== */
+/* Text Alignment Classes */
 .text-left {
   text-align: left;
 }
-
 .text-center {
   text-align: center;
 }
-
 .text-right {
   text-align: right;
 }
-
 footer .text-left {
   text-align: left;
 }
@@ -250,13 +240,11 @@ footer .text-center {
 footer .text-right {
   text-align: center;
 }
-
-/* ===== ADDRESS ===== */
+/* Address Styles */
 address {
   font-style: normal;
 }
-
-/* ===== SOCIAL LINKS ===== */
+/* Social Links */
 .social-links {
   display: flex;
   gap: 12px;
@@ -286,17 +274,14 @@ address {
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
 }
-
 footer .social-links {
   justify-content: center;
 }
-
-/* ===== BREADCRUMB ===== */
+/* Breadcrumb Styles */
 .breadcrumb-container {
   border-bottom: 1px solid #e9ecef;
   background-color: #f9f9f9;
 }
-
 .breadcrumb {
   margin-bottom: 0;
   padding: 0.75rem 0;
@@ -318,8 +303,7 @@ footer .social-links {
   color: #333;
   font-weight: 500;
 }
-
-/* ===== CONTACT ===== */
+/* Contact Section Styles */
 .contact-address {
   font-style: normal;
   display: flex;
@@ -327,7 +311,6 @@ footer .social-links {
   gap: 16px;
   margin-bottom: 0;
 }
-
 .contact-item {
   display: flex;
   align-items: flex-start;
@@ -352,8 +335,7 @@ footer .social-links {
   margin-top: 2px;
   flex-shrink: 0;
 }
-
-/* ===== FORMS ===== */
+/* Form Styles */
 .form-label {
   font-weight: 600;
   color: #333;
@@ -361,7 +343,6 @@ footer .social-links {
   display: block;
   font-size: 0.95rem;
 }
-
 .form-control,
 .form-select {
   border: 2px solid #e9ecef;
@@ -377,7 +358,6 @@ footer .social-links {
   background-color: #fff;
   box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.15);
 }
-
 .form-check {
   padding: 10px 0;
   margin-bottom: 12px;
@@ -405,23 +385,19 @@ footer .social-links {
   margin-left: 8px;
   font-weight: 500;
 }
-
 .mb-3 {
   margin-bottom: 1.5rem;
 }
-
 .form-group-wrapper {
   margin-bottom: 1.5rem;
 }
-
-/* ===== TABLES ===== */
+/* Table Styles */
 .table-responsive {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
 }
-
 .table {
   margin-bottom: 0;
   border-collapse: collapse;
@@ -462,8 +438,7 @@ footer .social-links {
   font-weight: 600;
   white-space: nowrap;
 }
-
-/* ===== CARDS ===== */
+/* Card Styles Enhancement */
 .card {
   border: none;
   border-radius: 10px;
@@ -482,39 +457,39 @@ footer .social-links {
   color: #666;
   line-height: 1.6;
 }
-
-/* ===== GENERAL STYLES ===== */
+/* Container and spacing */
 .container {
   padding-left: 15px;
   padding-right: 15px;
 }
-
+/* General Body Styles */
 body {
   line-height: 1.6;
   color: #555;
   padding-top: 60px;
 }
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #333;
   font-weight: 700;
   line-height: 1.3;
 }
-
 h2 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-
 h3 {
   margin-top: 1.3rem;
   margin-bottom: 1rem;
 }
-
 p {
   margin-bottom: 1rem;
 }
-
+/* Jumbotron Enhancement */
 .jumbotron-fluid {
   padding: 4rem 2rem;
 }
@@ -522,26 +497,23 @@ p {
   font-size: 2.5rem;
   font-weight: 700;
 }
-
+/* Responsive images */
 img {
   max-width: 100%;
   height: auto;
 }
-
+/* Padding utilities */
 .mt-5 {
   margin-top: 3rem !important;
 }
-
 .mb-4 {
   margin-bottom: 2rem !important;
 }
-
 .py-5 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
 }
-
-/* ===== RESPONSIVE ===== */
+/* Responsive Footer */
 @media (max-width: 768px) {
   footer .col-md-4 {
     text-align: center;
@@ -563,6 +535,7 @@ img {
   .social-links {
     justify-content: center;
   }
+  /* Form responsive */
   .form-label {
     font-size: 0.9rem;
   }
@@ -571,6 +544,7 @@ img {
     font-size: 0.9rem;
     padding: 8px 12px;
   }
+  /* Table responsive */
   .table thead th {
     padding: 12px 8px;
     font-size: 0.85rem;
@@ -579,15 +553,21 @@ img {
     padding: 10px 8px;
     font-size: 0.85rem;
   }
+  .table .btn-sm {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+  }
+  /* Jumbotron responsive */
   .jumbotron-fluid {
     padding: 2rem 1rem;
   }
   .jumbotron-fluid .display-4 {
     font-size: 1.8rem;
   }
-  .jumbotron-fluid p.lead {
+  .jumbotron p.lead {
     font-size: 0.95rem;
   }
+  /* Heading responsive */
   h2 {
     font-size: 1.5rem;
   }
@@ -600,6 +580,7 @@ img {
   .card-hotel .card-text {
     font-size: 0.85rem;
   }
+  /* Spacing responsivo */
   .mt-5 {
     margin-top: 1.5rem !important;
   }
@@ -610,5 +591,4 @@ img {
     margin-bottom: 1rem;
   }
 }
-
-/*# sourceMappingURL=styles2.css.map */
+/*# sourceMappingURL=styles.css.map */

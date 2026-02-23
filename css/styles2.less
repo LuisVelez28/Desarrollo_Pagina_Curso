@@ -1,13 +1,59 @@
-/* Navbar Styles */
-.navbar {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 1rem 0;
+// ===== VARIABLES =====
+@primary: #667eea;
+@secondary: #764ba2;
+@dark-bg: #1e1e2e;
+@text-dark: #333;
+@text-light: #666;
+@text-footer: #b0b0c5;
+@white: #fff;
+@border: #e9ecef;
+@light-bg: #f9f9f9;
+
+// Colores adicionales
+@amarillo: #FFD700;
+@rojo: #FF6B6B;
+@verde: #51CF66;
+
+// ===== MIXINS =====
+.transition() {
+    transition: all 0.3s ease;
 }
 
-.navbar-brand {
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
+.shadow(@type: sm) when (@type = sm) {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shadow(@type: md) when (@type = md) {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.shadow(@type: lg) when (@type = lg) {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-style(@bg-color, @padding: 20px, @margin: 15px) {
+    background-color: @bg-color;
+    padding: @padding;
+    margin: @margin;
+    border-radius: 8px;
+    .transition();
+    
+    &:hover {
+        transform: translateY(-3px);
+        .shadow(md);
+    }
+}
+
+/* Navbar Styles */
+.navbar {
+    .shadow(sm);
+    padding: 1rem 0;
+
+    &-brand {
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -19,15 +65,15 @@
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #fff !important;
-    border-bottom: 2px solid #667eea;
+    color: @white !important;
+    border-bottom: 2px solid @primary;
     padding-bottom: 2px;
 }
 
 /* Jumbotron Styles */
 .jumbotron {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: #fff;
+    background: linear-gradient(135deg, @primary 0%, @secondary 100%);
+    color: @white;
     padding: 60px 20px;
     text-align: center;
     border-radius: 8px;
@@ -93,7 +139,7 @@
 }
 
 .card-hotel .card {
-    background-color: #fff;
+    background-color: @white;
     border: none;
     border-radius: 12px;
     overflow: hidden;
@@ -134,34 +180,34 @@
     font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #333;
+    color: @text-dark;
 }
 
 .card-hotel .card-text {
     font-size: 0.95rem;
-    color: #666;
+    color: @text-light;
     margin-bottom: 15px;
     flex-grow: 1;
 }
 
 .card-hotel .card-price {
     font-size: 1.5rem;
-    color: #667eea;
+    color: @primary;
     font-weight: bold;
     margin-bottom: 0;
 }
 
 .card-hotel .card-footer {
     padding: 15px 20px;
-    border-top: 1px solid #e9ecef;
+    border-top: 1px solid @border;
 }
 
 /* Footer Styles */
 footer {
-    background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
-    color: #fff;
+    background: linear-gradient(135deg, @dark-bg 0%, #2d2d44 100%);
+    color: @white;
     margin-top: 60px;
-    border-top: 3px solid #667eea;
+    border-top: 3px solid @primary;
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -178,7 +224,7 @@ footer h5 {
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #fff;
+    color: @white;
     text-transform: uppercase;
     letter-spacing: 1px;
     position: relative;
@@ -192,7 +238,7 @@ footer h5:after {
     left: 0;
     width: 40px;
     height: 3px;
-    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(90deg, @primary 0%, @secondary 100%);
     border-radius: 2px;
 }
 
@@ -202,7 +248,7 @@ footer .col-md-4 {
 }
 
 footer p {
-    color: #b0b0c5;
+    color: @text-footer;
     line-height: 1.8;
     font-size: 0.95rem;
     margin: 0;
@@ -213,7 +259,7 @@ footer ul.list-unstyled li {
 }
 
 footer ul.list-unstyled li a {
-    color: #b0b0c5;
+    color: @text-footer;
     text-decoration: none;
     transition: all 0.3s ease;
     display: inline-block;
@@ -221,7 +267,7 @@ footer ul.list-unstyled li a {
 }
 
 footer ul.list-unstyled li a:hover {
-    color: #667eea;
+    color: @primary;
     transform: translateX(5px);
     font-weight: 600;
 }
@@ -247,8 +293,8 @@ footer .text-center p {
     display: inline-block;
     padding: 12px 30px;
     margin: 5px;
-    background-color: #667eea;
-    color: #fff;
+    background-color: @primary;
+    color: @white;
     border-radius: 5px;
     font-size: 1rem;
     font-weight: 600;
@@ -257,7 +303,7 @@ footer .text-center p {
 }
 
 .btn:hover {
-    background-color: #764ba2;
+    background-color: @secondary;
 }
 
 /* Text Alignment Classes */
@@ -303,9 +349,9 @@ address {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: @white;
     background-color: rgba(102, 126, 234, 0.2);
-    border: 2px solid #667eea;
+    border: 2px solid @primary;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -316,9 +362,9 @@ address {
 }
 
 .social-links a:hover {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-color: #764ba2;
-    color: #fff;
+    background: linear-gradient(135deg, @primary 0%, @secondary 100%);
+    border-color: @secondary;
+    color: @white;
     transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
 }
@@ -329,8 +375,8 @@ footer .social-links {
 
 /* Breadcrumb Styles */
 .breadcrumb-container {
-    border-bottom: 1px solid #e9ecef;
-    background-color: #f9f9f9;
+    border-bottom: 1px solid @border;
+    background-color: @light-bg;
 }
 
 .breadcrumb {
@@ -339,23 +385,23 @@ footer .social-links {
 }
 
 .breadcrumb-item {
-    color: #666;
+    color: @text-light;
     font-size: 0.95rem;
 }
 
 .breadcrumb-item a {
-    color: #667eea;
+    color: @primary;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .breadcrumb-item a:hover {
-    color: #764ba2;
+    color: @secondary;
     text-decoration: underline;
 }
 
 .breadcrumb-item.active {
-    color: #333;
+    color: @text-dark;
     font-weight: 500;
 }
 
@@ -372,7 +418,7 @@ footer .social-links {
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    color: #b0b0c5;
+    color: @text-footer;
     font-size: 0.95rem;
     padding: 10px 0;
     transition: all 0.3s ease;
@@ -380,13 +426,13 @@ footer .social-links {
 }
 
 .contact-item:hover {
-    color: #667eea;
+    color: @primary;
     padding-left: 8px;
 }
 
 .contact-item .oi {
     font-size: 1.3rem;
-    color: #667eea;
+    color: @primary;
     min-width: 24px;
     display: flex;
     align-items: center;
@@ -398,7 +444,7 @@ footer .social-links {
 /* Form Styles */
 .form-label {
     font-weight: 600;
-    color: #333;
+    color: @text-dark;
     margin-bottom: 8px;
     display: block;
     font-size: 0.95rem;
@@ -406,18 +452,18 @@ footer .social-links {
 
 .form-control,
 .form-select {
-    border: 2px solid #e9ecef;
+    border: 2px solid @border;
     border-radius: 6px;
     padding: 10px 15px;
     font-size: 0.95rem;
     transition: all 0.3s ease;
-    background-color: #f9f9f9;
+    background-color: @light-bg;
 }
 
 .form-control:focus,
 .form-select:focus {
-    border-color: #667eea;
-    background-color: #fff;
+    border-color: @primary;
+    background-color: @white;
     box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.15);
 }
 
@@ -429,19 +475,19 @@ footer .social-links {
 .form-check-input {
     width: 20px;
     height: 20px;
-    border: 2px solid #e9ecef;
+    border: 2px solid @border;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .form-check-input:checked {
-    background-color: #667eea;
-    border-color: #667eea;
+    background-color: @primary;
+    border-color: @primary;
     box-shadow: none;
 }
 
 .form-check-input:focus {
-    border-color: #667eea;
+    border-color: @primary;
     box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.15);
 }
 
@@ -485,14 +531,14 @@ footer .social-links {
     padding: 16px 12px;
     font-size: 0.95rem;
     text-transform: uppercase;
-    color: #fff;
+    color: @white;
     vertical-align: middle;
 }
 
 .table tbody td {
     border: none;
     padding: 14px 12px;
-    border-bottom: 1px solid #e9ecef;
+    border-bottom: 1px solid @border;
     font-size: 0.9rem;
     vertical-align: middle;
     color: #555;
@@ -530,13 +576,13 @@ footer .social-links {
 }
 
 .card-title {
-    color: #333;
+    color: @text-dark;
     font-weight: 700;
     margin-bottom: 12px;
 }
 
 .card-text {
-    color: #666;
+    color: @text-light;
     line-height: 1.6;
 }
 
@@ -559,7 +605,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #333;
+    color: @text-dark;
     font-weight: 700;
     line-height: 1.3;
 }
