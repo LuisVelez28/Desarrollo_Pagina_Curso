@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="es">
 
 <head>
@@ -7,7 +8,7 @@
     <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <!-- endbuild -->
 </head>
@@ -71,7 +72,7 @@
         <div class="row">
             <div class="col-12 col-sm-6 col-lg-4 mb-4 card-hotel">
                 <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=400&h=250&fit=crop" class="card-img-top" alt="Hotel Premium Deluxe">
+                    <img src="images/hotel-premium-deluxe.jpg" class="card-img-top" alt="Hotel Premium Deluxe">
                     <div class="card-header bg-primary text-white">
                         <span class="oi oi-star"></span> Premium
                     </div>
@@ -94,7 +95,7 @@
             </div>
             <div class="col-12 col-sm-6 col-lg-4 mb-4 card-hotel">
                 <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=400&h=250&fit=crop" class="card-img-top" alt="Hotel Boutique Elegancia">
+                    <img src="images/hotel-boutique.jpg" class="card-img-top" alt="Hotel Boutique Elegancia">
                     <div class="card-header bg-info text-white">
                         <span class="oi oi-heart"></span> Boutique
                     </div>
@@ -117,7 +118,7 @@
             </div>
             <div class="col-12 col-sm-6 col-lg-4 mb-4 card-hotel">
                 <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=400&h=250&fit=crop" class="card-img-top" alt="Hotel Económico Confort">
+                    <img src="images/hotel-economico.jpg" class="card-img-top" alt="Hotel Económico Confort">
                     <div class="card-header bg-success text-white">
                         <span class="oi oi-dollar"></span> Económico
                     </div>
@@ -140,7 +141,7 @@
             </div>
             <div class="col-12 col-sm-6 col-lg-4 mb-4 card-hotel">
                 <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400&h=250&fit=crop" class="card-img-top" alt="Hotel Resort Playas">
+                    <img src="images/hotel-montaña.jpg" class="card-img-top" alt="Hotel Resort Playas">
                     <div class="card-header bg-warning text-dark">
                         <span class="oi oi-sun"></span> Resort
                     </div>
@@ -163,7 +164,7 @@
             </div>
             <div class="col-12 col-sm-6 col-lg-4 mb-4 card-hotel">
                 <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop" class="card-img-top" alt="Hotel Montaña Aventura">
+                    <img src="images/hotel-economico.jpg" class="card-img-top" alt="Hotel Montaña Aventura">
                     <div class="card-header bg-secondary text-white">
                         <span class="oi oi-globe"></span> Aventura
                     </div>
@@ -186,7 +187,7 @@
             </div>
             <div class="col-12 col-sm-6 col-lg-4 mb-4 card-hotel">
                 <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400&h=250&fit=crop" class="card-img-top" alt="Hotel Centro Negocios">
+                    <img src="images/hotel-premium-deluxe.jpg" class="card-img-top" alt="Hotel Centro Negocios">
                     <div class="card-header bg-dark text-white">
                         <span class="oi oi-briefcase"></span> Negocios
                     </div>
@@ -715,41 +716,12 @@
             </div>
         </div>
     </div>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-        $(function() {
-            $('[data-bs-toggle="tooltip"]').tooltip();
-            $('[data-bs-toggle="popover"]').popover();
-            
-            $('.modal').on('show.bs.modal', function (e) {
-                console.log('Modal se esta ejecutando:', this.id);
-                // Guardar la referencia del botón en el modal y deshabilitarlo
-                const $trigger = $(e.relatedTarget);
-                $(this).data('triggerButton', $trigger);
-                $trigger.prop('disabled', true).addClass('btn-secondary');
-            });
-            
-            $('.modal').on('shown.bs.modal', function (e) {
-                console.log('Modal se ejecutó');
-            });
-            
-            $('.modal').on('hide.bs.modal', function (e) {
-                console.log('Modal se esta cerrando');
-            });
-            
-            $('.modal').on('hidden.bs.modal', function (e) {
-                console.log('Modal se cerró');
-                // Re-habilitar el botón usando la referencia guardada
-                const $trigger = $(this).data('triggerButton');
-                if ($trigger) {
-                    $trigger.prop('disabled', false).removeClass('btn-secondary');
-                }
-            });
-        });
-    </script>
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>

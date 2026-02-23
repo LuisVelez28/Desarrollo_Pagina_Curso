@@ -14,6 +14,15 @@ $amarillo: #FFD700;
 $rojo: #FF6B6B;
 $verde: #51CF66;
 
+// Colores complementarios
+$table-header: #2c3e50;
+$row-hover: #f5f7fa;
+$gray-dark: #888;
+$table-text: #555;
+$footer-divider: #3d3d54;
+$footer-dark: #2d2d44;
+$checkbox-label: #555;
+
 // ===== MIXINS =====
 @mixin transition {
     transition: all 0.3s ease;
@@ -201,7 +210,7 @@ $verde: #51CF66;
 
 /* Footer Styles */
 footer {
-    background: linear-gradient(135deg, $dark-bg 0%, #2d2d44 100%);
+    background: linear-gradient(135deg, $dark-bg 0%, $footer-dark 100%);
     color: $white;
     margin-top: 60px;
     border-top: 3px solid $primary;
@@ -270,7 +279,7 @@ footer {
 
     hr {
         border: 0;
-        border-top: 1px solid #3d3d54;
+        border-top: 1px solid $footer-divider;
         margin: 30px 0 20px 0;
     }
 
@@ -278,7 +287,7 @@ footer {
         padding-top: 10px;
 
         p {
-            color: #888;
+            color: $gray-dark;
             font-size: 0.85rem;
             letter-spacing: 0.5px;
         }
@@ -472,7 +481,7 @@ footer .social-links {
 }
 
 .form-check-label {
-    color: #555;
+    color: $checkbox-label;
     font-size: 0.95rem;
     cursor: pointer;
     margin-left: 8px;
@@ -500,7 +509,7 @@ footer .social-links {
     border-collapse: collapse;
 
     thead.table-dark {
-        background-color: #2c3e50;
+        background-color: $table-header;
         font-weight: 700;
         letter-spacing: 0.5px;
 
@@ -520,14 +529,14 @@ footer .social-links {
         border-bottom: 1px solid $border;
         font-size: 0.9rem;
         vertical-align: middle;
-        color: #555;
+        color: $table-text;
     }
 
     tbody tr {
         @include transition;
 
         &:hover {
-            background-color: #f5f7fa;
+            background-color: $row-hover;
         }
 
         &:last-child td {
@@ -575,7 +584,7 @@ footer .social-links {
 /* General Body Styles */
 body {
     line-height: 1.6;
-    color: #555;
+    color: $table-text;
     padding-top: 60px;
 }
 
